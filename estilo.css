@@ -1,14 +1,21 @@
 /* EXERCÍCIO 1: fontes */
 /* importá-las aqui... e definir as `font-family` da turminha... */
+@import "fonts/ravie.css";
+@import "fonts/verdana.css";
+
 
 
 body {
   background-color: #fff;
+  font-family: "Verdana";
+  margin: 8px;
 }
 
 strong {
   color: #d027aa;
 }
+
+
 
 #recipiente {
   background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
@@ -38,26 +45,39 @@ strong {
 /* EXERCÍCIO 2: layout da página */
 #recipiente {
   /* layout da página aqui */
-  /* ... */
-  /* ... */
-  /* ... */
-  /* ... */
+  
+  width: 800px;
+  margin-left: auto;
+  margin-right:auto;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 154px 1fr;
+
+
 }
 
 #cabecalho-pagina {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  
 
 }
 
 #lateral {
-
+  grid-row: 1/4;
+  grid-column: 1/2;
 }
 
 #cardapio {
+  grid-row: 2/3;
+  grid-column: 2/3;
 
 }
 
 #rodape-pagina {
-
+  grid-row: 3/4;
+  grid-column: 2/3;
 }
 
 
@@ -68,14 +88,18 @@ strong {
 }
 
 #cabecalho-pagina h1 {
+  font-family: "Ravie";
   margin: 0;
+  padding: 10px;
   font-size: 36px;
   color: #e90c0c;
   font-weight: normal;
 }
 
 #cabecalho-pagina h2 {
+  font-family: "Verdana", "OpenSans", sans-serif;
   margin: 0;
+  padding: 10px;
   font-size: 24px;
   color: #333;
   font-weight: normal;
