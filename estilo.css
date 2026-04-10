@@ -8,7 +8,6 @@
 body {
   background-color: #fff;
   font-family: "Verdana";
-  margin: 8px;
 }
 
 strong {
@@ -84,13 +83,13 @@ strong {
 
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
-
+  padding: 10px;
 }
 
 #cabecalho-pagina h1 {
   font-family: "Ravie";
+  text-align: center;
   margin: 0;
-  padding: 10px;
   font-size: 36px;
   color: #e90c0c;
   font-weight: normal;
@@ -98,8 +97,8 @@ strong {
 
 #cabecalho-pagina h2 {
   font-family: "Verdana", "OpenSans", sans-serif;
+  text-align: right;
   margin: 0;
-  padding: 10px;
   font-size: 24px;
   color: #333;
   font-weight: normal;
@@ -107,15 +106,29 @@ strong {
 
 /* EXERCÍCIO 4: cada item do menu */
 article {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2em;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
 /* EXERCÍCIO 5: o rodapé */
 #rodape-pagina {
+  display: flex;
+  justify-content: right;
+  margin-right: 15px;
+  margin-top: 46px;
+  margin-bottom: 25px;
 }
 
 /* EXERCÍCIO 6: lateral */
 #lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 
