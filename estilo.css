@@ -134,17 +134,28 @@ article {
 
 /* EXERCÍCIO 7: o ticket */
 #ticket {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -89px;
 }
 
 #ticket:hover {
+  left: 0;
 }
 
 
 /* EXERCÍCIO 8: deslocamento no siri e peixe */
 #siri {
+  position: relative;
+  top: 27px;
+  right: 10px;
+
 }
 
 #peixe {
+  position: relative;
+  right: 44px;
 }
 
 /* EXERCÍCIO 9: bolhas - no HTML e no JS */
